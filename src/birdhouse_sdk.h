@@ -75,9 +75,9 @@ private:
 class Relays: public BaseRelay {
 public:
     Relays(const byte *portsList, unsigned long long portsListSize);
-    void InitRelays();
-    void TurnRelayByOutNum(uint8_t relayNum, bool isOn);
-    void TurnAllRelays(bool isOn);
+    void InitRelays() override;
+    void TurnRelayByOutNum(uint8_t relayNum, bool isOn) override;
+    void TurnAllRelays(bool isOn) override;
 private:
     const byte *portsList;
     unsigned long long portsListSize;
@@ -89,9 +89,9 @@ static const byte RelaysExtendedAdresses[] = {0x20, 0x21};
 class RelaysExtended: public BaseRelay {
 public:
 	RelaysExtended(const byte *addressesList, unsigned long long addressesListSize, byte outputsCount);
-    void InitRelays();
-	void TurnRelayByOutNum(uint8_t relayNum, bool isOn);
-    void TurnAllRelays(bool isOn);
+    void InitRelays() override;
+	void TurnRelayByOutNum(uint8_t relayNum, bool isOn) override;
+    void TurnAllRelays(bool isOn) override;
 private:
 	const byte *addressesList;
     unsigned long long addressesListSize;
@@ -165,7 +165,7 @@ private:
 
 class Eeprom_at24c256 {
 public:
-	Eeprom_at24c256(int address);
+	explicit Eeprom_at24c256(int address);
     bool IsConnected();
 	void Write(unsigned  int writeAddress, byte* data, int len);
 	void Read(unsigned  int readAdress, byte *buffer, int len);
