@@ -1,0 +1,80 @@
+#######################################
+# Syntax Coloring Map For Birdhouse SDK
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+BlinkModes	KEYWORD1
+Directions	KEYWORD1
+Relays	KEYWORD1
+RelaysExtended	KEYWORD1
+Buttons	KEYWORD1
+AnalogIndicators	KEYWORD1
+Eeprom_at24c256	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+InitRelays	KEYWORD2
+TurnRelayByOutNum   	KEYWORD2
+TurnAllRelays	KEYWORD2
+StartSerialBlinking	KEYWORD2
+TurnSerialBlinking	KEYWORD2
+RemoveSerialBlinking	KEYWORD2
+StartRandomBlinking	KEYWORD2
+TurnRandomBlinking	KEYWORD2
+RemoveRandomBlinking	KEYWORD2
+SetRandomBlinkingDisableChance	 KEYWORD2
+ProcessRelays	KEYWORD2
+Relays	KEYWORD2
+RelaysExtended	KEYWORD2
+
+Buttons	KEYWORD2
+InitButtons	KEYWORD2
+ProcessButtons	KEYWORD2
+ReadButtonState	KEYWORD2
+IsButtonChange	KEYWORD2
+DoOnButton	KEYWORD2
+
+AnalogIndicators	KEYWORD2
+InitAnalogIndicators	KEYWORD2
+SetIndicatorValueByNum	KEYWORD2
+StartRandomBlinking	KEYWORD2
+TurnRandomBlinking	KEYWORD2
+RemoveRandomBlinking	KEYWORD2
+ProcessIndicators	KEYWORD2
+
+Eeprom_at24c256 KEYWORD2
+IsConnected	KEYWORD2
+Write	KEYWORD2
+Read	KEYWORD2
+
+#######################################
+# Instances	(KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants	(LITERAL1)
+#######################################
+BM_TO_END_TO_START	LITERAL1
+BM_TO_END	LITERAL1
+
+D_START_TO_END	LITERAL1
+D_END_TO_START	LITERAL1
+
+MAX_SRL_BLINKS	LITERAL1
+MAX_RND_BLINKS	LITERAL1
+MAX_RELAYS	LITERAL1
+DEFAULT_RND_DISABLE_CHANCE	LITERAL1
+RELAYS_IN_BLOCK	LITERAL1
+MAX_BLOCKS	LITERAL1
+MAX_BUTTONS	LITERAL1
+DEBOUNCE_TIME	LITERAL1
+MAX_ANALOG_INDICATORS	LITERAL1
+MAX_IND_RND_BLINKS	LITERAL1
+
+BM_ROSE	LITERAL1
+BM_FELL	LITERAL1

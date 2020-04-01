@@ -1,0 +1,37 @@
+{
+    "name": "Birdhouse SDK",
+    "keywords": "birdhouse, relays, buttons, indicators",
+    "description": "An Arduino library to easy control lots of relays effects, buttons with debouncer, analog indicators and more",
+    "authors":
+    [
+        {
+            "name": "Prometheus team",
+            "url": "https://prometheus.team",
+            "email": "prometheus.larp@gmail.com",
+            "maintainer": true
+        },
+        {
+            "name": "Serhiy Korzun",
+            "url": "https://github.com/Nargott",
+            "email": "korzun.serhiy@gmail.com"
+        }
+    ],
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/Nargott/birdhouse_sdk.git"
+    },
+    "license": "MIT License",
+    "frameworks": "*",
+    "platforms": "*",
+    "dependencies":
+    [
+        {
+            "name": "PCF857X"
+        },
+        {
+            "name": "Bounce2"
+        }
+    ],
+    "version": "1.0.0"
+}
