@@ -21,7 +21,7 @@
         "type": "git",
         "url": "https://github.com/Nargott/birdhouse_sdk.git"
     },
-    "license": "MIT License",
+    "license": "MIT",
     "frameworks": "*",
     "platforms": "*",
     "dependencies":
